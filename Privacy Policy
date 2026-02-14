@@ -1,0 +1,41 @@
+Effective Date: February 14, 2026
+Last Updated: February 14, 2026
+
+1. Information We Process
+This extension only processes data when you actively start OCR by selecting an area on a webpage. Data may include:
+
+Image content within the area you selected (for OCR only)
+Recognized text result
+Local settings and latest OCR result stored in your browser
+2. How We Use Information
+Processed data is used only to:
+
+Run OCR for selected on-screen content
+Show OCR results to you
+Copy OCR results to your clipboard
+Save the latest result locally for your convenience
+3. Storage and Data Transfer
+OCR is performed locally by default.
+We do not intentionally send your screenshots or recognized text to our own servers.
+If Tesseract is enabled, language files (for example, eng) may be downloaded from a public model host on first use and then cached by your browser.
+4. Permissions We Request
+activeTab / scripting: inject selection and OCR logic into the active page
+tabs: identify active tab and perform capture flow
+clipboardWrite: copy recognized text to clipboard
+storage: store latest OCR result locally
+host_permissions: <all_urls>: allow OCR selection on pages you choose to use
+5. Third-Party Components
+This extension may use third-party OCR components (such as Tesseract.js) and public language model hosting.
+Your OCR content is not intentionally shared with third parties; external requests are limited to loading model assets when needed.
+
+6. Data Retention and Deletion
+OCR results saved by this extension are stored locally in your browser.
+You can remove stored data at any time by clearing extension storage or uninstalling the extension.
+7. Children’s Privacy
+This extension is not directed to children under 13.
+
+8. Changes to This Policy
+We may update this Privacy Policy from time to time. Material changes will be reflected in the extension listing or release notes.
+
+9. Contact
+For privacy-related questions, contact us via the contact method listed on the extension’s store page.
