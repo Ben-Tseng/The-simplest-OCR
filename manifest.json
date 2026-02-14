@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "极简OCR",
+  "version": "1.0",
+  "description": "鼠标框选即自动识别数字字母",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "clipboardWrite",
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "tesseract/tesseract.min.js",
+        "ocr.js",
+        "selection.js"
+      ],
+      "css": [
+        "selection.css"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icon128.png",
+        "tesseract/tesseract.min.js",
+        "tesseract/worker.min.js",
+        "tesseract/tesseract-core.wasm.js",
+        "tesseract/tesseract-core.wasm"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
